@@ -8,14 +8,15 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_width="296dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="52dp"
         android:fontFamily="serif"
         android:text="@string/calcular"
-        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
@@ -37,13 +38,68 @@
         style="@style/EditTextRounded"
         android:layout_width="285dp"
         android:layout_height="49dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="@string/agua"
         android:inputType="text"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="279dp" />
+        app:layout_constraintTop_toBottomOf="@+id/et_cenergía" />
+
+    <EditText
+        android:id="@+id/et_residuos"
+        style="@style/EditTextRounded"
+        android:layout_width="285dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="@string/residuos"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cagua" />
+
+    <EditText
+        android:id="@+id/et_reciclaje"
+        style="@style/EditTextRounded"
+        android:layout_width="285dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/reciclaje"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_residuos" />
+
+    <Button
+        android:id="@+id/b_calculadora"
+        android:layout_width="192dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/rosado"
+        android:fontFamily="serif"
+        android:text="Calcular"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_reciclaje"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="81dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appLogo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

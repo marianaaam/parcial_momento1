@@ -27,4 +27,6 @@
     <string name="calcular">Calculadora de Métricas de Salud</string>
     <string name="energia">Consumo de energía eléctrica</string>
     <string name="agua">Consumo de agua (litros)</string>
+    <string name="residuos">Generación de residuos (kg)</string>
+    <string name="reciclaje">Hábitos de reciclaje</string>
 </resources>
