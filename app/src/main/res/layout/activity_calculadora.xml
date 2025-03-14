@@ -101,5 +101,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/appLogo" />
 
+    <TextView
+        android:id="@+id/tvResultados"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
