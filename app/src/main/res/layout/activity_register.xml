@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="107dp"
+            android:layout_height="106dp"
+            app:srcCompat="@drawable/appLogo" />
+
+        <TextView
+            android:id="@+id/tv_appNombre"
+            android:layout_width="131dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="32sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="@string/message"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_names"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/names"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_surnames"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/surnames"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_email"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_phone"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:hint="@string/phone"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/et_confirmPassword"
+            style="@style/EditTextRounded"
+            android:layout_width="349dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Repite la contraseña"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/cb_tyc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tyc"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:buttonTint="@color/rosado"/>
+
+
+        <Button
+            android:id="@+id/bt_ingresar"
+            android:layout_width="209dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="14dp"
+            android:backgroundTint="@color/rosado"
+            android:text="@string/register"
+            android:textAllCaps="false"
+            android:textSize="24dp"
+            android:typeface="serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_contraseña"
+            app:strokeColor="@color/white"
+            app:strokeWidth="3dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="@string/account"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="@string/login2"
+                android:fontFamily="serif"
+                android:textColor="@color/rosado"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

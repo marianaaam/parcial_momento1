@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="108dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/appLogo" />
+
+    <TextView
+        android:id="@+id/tv_appNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="serif"
+        android:text="@string/app_name"
+        android:textColor="@color/rosado"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.298"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_iniciaSesion"
+        android:layout_width="273dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:text="@string/login"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:typeface="sans"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_appNombre" />
+
+    <EditText
+        android:id="@+id/et_contraseña"
+        style="@style/EditTextRounded"
+        android:layout_width="285dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_usuario" />
+
+    <ImageView
+        android:id="@+id/iv_icContraseña"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/et_contraseña"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_usuario"
+        app:srcCompat="@drawable/ic_key" />
+
+    <ImageView
+        android:id="@+id/iv_usuario"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/et_usuario"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_iniciaSesion"
+        app:srcCompat="@drawable/ic_user" />
+
+    <EditText
+        android:id="@+id/et_usuario"
+        style="@style/EditTextRounded"
+        android:layout_width="285dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="24dp"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_iniciaSesion" />
+
+    <Button
+        android:id="@+id/bt_ingresar"
+        android:layout_width="265dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/rosado"
+        android:text="@string/enter"
+        android:textAllCaps="false"
+        android:textSize="34sp"
+        android:typeface="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_contraseña"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/tv_RecuperarContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="@string/recoverPassword"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_ingresar" />
+
+    <Button
+        android:id="@+id/bt_ingresarGoogle"
+        android:layout_width="333dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="68dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="serif"
+        android:text="@string/enterGoogle"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:cornerRadius="10sp"
+        app:icon="@drawable/ic_google"
+        app:iconSize="30dp"
+        app:iconTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_RecuperarContraseña"
+        app:strokeColor="@color/rosado"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/tv_registrate"
+        android:layout_width="90dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="84dp"
+        android:fontFamily="serif"
+        android:text="@string/register"
+        android:textColor="@color/rosado"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_sinCuenta"
+        app:layout_constraintTop_toBottomOf="@+id/bt_ingresarGoogle" />
+
+    <TextView
+        android:id="@+id/tv_sinCuenta"
+        android:layout_width="153dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="serif"
+        android:text="@string/noAccount"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_ingresarGoogle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

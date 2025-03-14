@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris">
+
+    <Button
+        android:id="@+id/b_calculadora"
+        android:layout_width="180dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/rosado"
+        android:fontFamily="serif"
+        android:text="@string/calculadora"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp"
+        tools:layout_editor_absoluteY="628dp" />
+
+    <View
+        android:id="@+id/v_contenedor"
+        android:layout_width="411dp"
+        android:layout_height="221dp"
+        android:background="#30000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_profile"
+        android:layout_width="219dp"
+        android:layout_height="182dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toBottomOf="@+id/v_contenedor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_contenedor" />
+
+    <Button
+        android:id="@+id/b_editProfile"
+        android:layout_width="180dp"
+        android:layout_height="58dp"
+        android:backgroundTint="@color/rosado"
+        android:text="@string/editProfile"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_profile"
+        app:strokeColor="@color/white"
+        app:strokeWidth="3dp" />
+
+    <EditText
+        android:id="@+id/et_names"
+        style="@style/EditTextRounded"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_editProfile" />
+
+    <EditText
+        android:id="@+id/et_surnames"
+        style="@style/EditTextRounded"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_names" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/EditTextRounded"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_surnames" />
+
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/EditTextRounded"
+        android:layout_width="323dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

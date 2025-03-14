@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Games</string>
+    <string name="myname">Mariana Lizeth Marin Rojas</string>
+    <string name="starts">Comienza</string>
+    <string name="register">Regístrate</string>
+    <string name="enter">Ingresar</string>
+    <string name="recoverPassword">Recupera Tu Contraseña</string>
+    <string name="description">Inicia una nueva aventura con LifeSync y descubre una nueva forma de ver el mundo</string>
+    <string name="login">La aventura está por iniciar, por favor inicia sesión</string>
+    <string name="enterGoogle">Ingresa con Google</string>
+    <string name="noAccount">No tienes cuenta?</string>
+    <string name="message">Complete el formulario para registrarse</string>
+    <string name="names">Nombres</string>
+    <string name="surnames">Apellidos</string>
+    <string name="email">Correo Eletrónico</string>
+    <string name="phone">Telefono</string>
+    <string name="password">Contraseña</string>
+    <string name="confirmPassword">Repite la contraseña</string>
+    <string name="account">¿Ya tienes cuenta?</string>
+    <string name="login2">Inicia sesión</string>
+    <string name="instruction">Ingresa tu correo electrónico y te enviaremos las instrucciones para restablecer tu contraseña</string>
+    <string name="instructions">Enviar instrucciones</string>
+    <string name="editProfile">Editar perfil</string>
+    <string name="tyc">Acepto los términos y condiciones</string>
+    <string name="Return">Regresar</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="calcular">Calculadora de Métricas de Salud</string>
+    <string name="energia">Consumo de energía eléctrica</string>
+    <string name="agua">Consumo de agua (litros)</string>
+</resources>
